@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online calculators for school, college, and professional use. Includes basic, scientific, graphing, statistical, financial, chemistry, and astronomy calculators.">
+    <meta name="keywords" content="calculator, scientific calculator, graphing calculator, financial calculator, chemistry calculator, astronomy calculator, math tools">
+    <title>OmniCalc - Comprehensive Online Calculators for All Needs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OmniCalc</h1>
+            <p>Your all-in-one calculator solution for school, college, and professional needs</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#school-calculators">School (K-12)</a></li>
+                <li><a href="#college-calculators">College/University</a></li>
+                <li><a href="#industry-calculators">Industry</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="school-calculators" class="calculator-category">
+            <h2><i class="fas fa-school"></i> School Calculators (K-12)</h2>
+            <div class="calculator-grid">
+                <div class="calculator-card" onclick="loadCalculator('basic')">
+                    <h3>Basic Calculator</h3>
+                    <p>Simple arithmetic operations for elementary students</p>
+                    <div class="calculator-preview" id="basic-preview"></div>
+                </div>
+                <div class="calculator-card" onclick="loadCalculator('scientific')">
+                    <h3>Scientific Calculator</h3>
+                    <p>Advanced functions for middle and high school students</p>
+                    <div class="calculator-preview" id="scientific-preview"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="college-calculators" class="calculator-category">
+            <h2><i class="fas fa-graduation-cap"></i> College/University Calculators</h2>
+            <div class="calculator-grid">
+                <div class="calculator-card" onclick="loadCalculator('advanced-scientific')">
+                    <h3>Advanced Scientific</h3>
+                    <p>Complex calculations for engineering and science students</p>
+                    <div class="calculator-preview" id="advanced-scientific-preview"></div>
+                </div>
+                <div class="calculator-card" onclick="loadCalculator('graphing')">
+                    <h3>Graphing Calculator</h3>
+                    <p>Plot functions and visualize mathematical relationships</p>
+                    <div class="calculator-preview" id="graphing-preview"></div>
+                </div>
+                <div class="calculator-card" onclick="loadCalculator('statistical')">
+                    <h3>Statistical Calculator</h3>
+                    <p>Analyze data sets with descriptive and inferential statistics</p>
+                    <div class="calculator-preview" id="statistical-preview"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="industry-calculators" class="calculator-category">
+            <h2><i class="fas fa-industry"></i> Industry Calculators</h2>
+            <div class="calculator-grid">
+                <div class="calculator-card" onclick="loadCalculator('financial')">
+                    <h3>Financial Calculator</h3>
+                    <p>Time value of money, loans, investments, and more</p>
+                    <div class="calculator-preview" id="financial-preview"></div>
+                </div>
+                <div class="calculator-card" onclick="loadCalculator('chemistry')">
+                    <h3>Chemistry Calculator</h3>
+                    <p>Molar mass, stoichiometry, solution preparation</p>
+                    <div class="calculator-preview" id="chemistry-preview"></div>
+                </div>
+                <div class="calculator-card" onclick="loadCalculator('astronomy')">
+                    <h3>Astronomical Calculator</h3>
+                    <p>Celestial calculations, conversions, and observations</p>
+                    <div class="calculator-preview" id="astronomy-preview"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator-display" class="hidden">
+            <div class="calculator-header">
+                <h2 id="calculator-title">Calculator</h2>
+                <button onclick="closeCalculator()" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="calculator-container"></div>
+        </section>
+
+        <section id="about">
+            <h2>About OmniCalc</h2>
+            <p>OmniCalc provides free, easy-to-use online calculators for students and professionals. Our tools are designed to help with everything from basic arithmetic to advanced scientific, financial, and specialized calculations.</p>
+            <p>All calculators work directly in your browser with no downloads required. We're constantly adding new calculators based on user feedback.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 OmniCalc. All rights reserved.</p>
+            <p>Designed for students, educators, and professionals worldwide.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="calculators.js"></script>
+</body>
+</html>
